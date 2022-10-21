@@ -1,9 +1,14 @@
 # PTBS-System
 Implemented Patterns
+
 Facade
+
 Bridge
+
 Iterator
+
 Factory
+
 Visitor
 
 
