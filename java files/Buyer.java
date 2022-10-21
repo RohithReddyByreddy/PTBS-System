@@ -1,5 +1,5 @@
 public class Buyer extends Person {
-
+	//Bridge Pattern
 	public String name;
 	public String type;
 	public String product;
@@ -11,6 +11,14 @@ public class Buyer extends Person {
 	public void showMenu() {
 		classProductList cl=new classProductList();
 		System.out.println("meat menu");
+		System.out.println("produce menu");
+		for(Product st:cl.list2)
+		{
+			if(st.type.equals("Produce"))
+			{
+				System.out.println(st.product);
+			}
+		}
 		for(Product st:cl.list2)
 		{
 			if(st.type=="Meat")
@@ -18,6 +26,8 @@ public class Buyer extends Person {
 				System.out.println(st.product);
 			}
 		}
+
+
 	}
 
 	public ProductMenu CreateProductMenu() {

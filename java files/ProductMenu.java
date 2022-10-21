@@ -1,5 +1,5 @@
 public interface ProductMenu {
-
+	//Factory Pattern
 	public abstract void showMenu();
 
 	public abstract void showAddButton();

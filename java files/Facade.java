@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.awt.event.*;
 public class Facade {
-
+	//Facade Pattern
 	private int UserType;
 
 	public Product theSelectedProduct;
@@ -105,6 +105,7 @@ public class Facade {
 
 	public void SelectProduct() {
 
+
 	}
 
 	public void productOperation() {
@@ -137,7 +138,6 @@ public static void main(String[] args)
 	}
 	else
 	{
-
 		while(true) {
 			System.out.println("1.add Trading");
 			System.out.println("2.View Trading");

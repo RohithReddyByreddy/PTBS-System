@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.*;
 public class classProductList {
+	//Iterator Pattern
 	public List<Product> list2 = new ArrayList<Product>();
 	private ProductIterator productIterator;
 	 public classProductList(){

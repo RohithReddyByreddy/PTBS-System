@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Login extends JFrame implements ActionListener {
+    //Facade Pattern
     static final Object wait = new Object();
     public String type1;
     public String name;

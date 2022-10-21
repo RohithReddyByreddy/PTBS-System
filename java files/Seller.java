@@ -1,4 +1,5 @@
 public class Seller extends Person {
+	//Bridge Pattern
 	public String name;
 	public String type;
 	public String product;
@@ -14,6 +15,14 @@ public class Seller extends Person {
 		for(Product st:cl.list2)
 		{
 			if(st.type.equals("Produce"))
+			{
+				System.out.println(st.product);
+			}
+		}
+		System.out.println("Meat menu");
+		for(Product st:cl.list2)
+		{
+			if(st.type.equals("Meat"))
 			{
 				System.out.println(st.product);
 			}

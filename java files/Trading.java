@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Trading {
+	//Visitor Pattern
 	List<List<String>> tradingList=new ArrayList<List<String>>();
 	public Trading(String ptr,String str)
 	{

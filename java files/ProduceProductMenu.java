@@ -1,6 +1,6 @@
 import java.util.*;
 public class ProduceProductMenu implements ProductMenu {
-
+	//Factory Pattern
 	List<String> list = new ArrayList<String>();
 	public ProduceProductMenu(List<String> li)
 	{
