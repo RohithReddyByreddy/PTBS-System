@@ -124,21 +124,34 @@ public static void main(String[] args)
 	System.out.println("Select options from the menu");
 	if(fac.type1=="buyer")
 	{
-		System.out.println("1.View Trading");
-		int n= sc.nextInt();
-		if(n==1)  fac.viewTrading(t);
+		while(true) {
+			System.out.println("1.View Trading");
+			System.out.println("2.exit");
+			int n = sc.nextInt();
+			if (n == 1) fac.viewTrading(t);
+			else if(n==2)
+			{
+				break;
+			}
+		}
 	}
 	else
 	{
-		System.out.println("1.add Trading");
-		System.out.println("2.View Trading");
-		int n=sc.nextInt();
-		if(n==1) {
-			fac.addTrading(t,str,fac.name);
-		}
-		else
-		{
-			fac.viewTrading(t);
+
+		while(true) {
+			System.out.println("1.add Trading");
+			System.out.println("2.View Trading");
+			System.out.println("3.exit");
+			int n=sc.nextInt();
+			if (n == 1) {
+				fac.addTrading(t, str, fac.name);
+			} else if(n==2){
+				fac.viewTrading(t);
+			}
+			else if(n==3)
+			{
+				break;
+			}
 		}
 	}
 
