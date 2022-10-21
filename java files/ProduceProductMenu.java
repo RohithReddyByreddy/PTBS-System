@@ -1,5 +1,11 @@
+import java.util.*;
 public class ProduceProductMenu implements ProductMenu {
 
+	List<String> list = new ArrayList<String>();
+	public ProduceProductMenu(List<String> li)
+	{
+		this.list=li;
+	}
 	public void showMenu() {
 
 	}
